@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius em Fahrenheits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Conversor de Temperatura</h1>
+    <div class="input-container">
+    <input type="text" id="cels" placeholder="Insira a temperatura em Celsius">
+    <input type="text" id="cels2" placeholder="Insira a temperatura em Fahrenheits">
+    </div>
+    <div>
+        <button id="btn1" onclick="converter2()">Converter</button>
+    </div>
+    <div id="result">resultado</div>
+
+    </div>
+    <script>
+        let gCelsius = document.querySelector("#cels");
+        let gFah = document.querySelector("#cels2")
+        var resultado = document.querySelector("#result")
+
+        function converter() {
+        
+            resultado.innerHTML =  gCelsius.value + " Graus CELSIUS " + "equivale a " + (gCelsius.value * 1.8 + 32) + " FAHRENHEITS";
+            
+
+
+        }
+
+        function converter2(){
+            let celsiusValue = gCelsius.value;
+            let fahrenheitValue = gFah.value;
+
+            // Verifica se o campo de Celsius foi preenchido e faz a conversão para Fahrenheit
+            if (celsiusValue !== "") {
+                let fahrenheit = (celsiusValue * 1.8) + 32;
+                resultado.innerHTML = `${celsiusValue} graus Celsius equivalem a ${fahrenheit.toFixed(2)} Fahrenheit.`;
+            } 
+            // Verifica se o campo de Fahrenheit foi preenchido e faz a conversão para Celsius
+            else if (fahrenheitValue !== "") {
+                let celsius = (fahrenheitValue - 32) / 1.8;
+                resultado.innerHTML = `${fahrenheitValue} graus Fahrenheit equivalem a ${celsius.toFixed(2)} Celsius.`;
+            } 
+            // Caso nenhum dos campos esteja preenchido
+            else {
+                resultado.innerHTML = "Por favor, insira uma temperatura para converter.";
+
+        }
+    }
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Contêiner principal para organizar os elementos */
+.container {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Tipografia moderna */
+    font-size: 36px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    color: #333; /* Cor do texto (cinza escuro) */
+    background-color: #f1f3f4; /* Fundo suave, cor de calculadora */
+    padding: 20px 40px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 2px solid #007bff; /* Borda fina com cor de destaque */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    transition: all 0.3s ease; /* Transição suave para interações */
+    margin-right: 10px;
+}
+
+body {
+    background: linear-gradient(135deg, #dddddd, #232424); /* Degradê diagonal */
+    height: 100vh; /* Altura completa da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+input {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif; /* Tipografia moderna */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    color: #ffffff; /* Cor do texto */
+    background-color: #f1f3f4; /* Fundo suave */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 2px solid #007bff; /* Borda fina */
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex; /* Alinhamento horizontal dos inputs */
+    gap: 10px; /* Espaçamento entre os inputs */
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+    opacity: 1;
+}
+
+input:hover {
+    background-color: #0056b3; /* Muda a cor de fundo quando o mouse está sobre o botão */
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f3f4;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+#btn1 {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn1:hover {
+    background-color: #0056b3; /* Muda a cor de fundo quando o mouse está sobre o botão */
+    transform: translateY(-2px);
+}
+
+::placeholder {
+
+    font-size: small;
+    color: #333;
+    border-color: #007bff;
+
+}
